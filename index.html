@@ -24,15 +24,6 @@ body, html {
   min-height: 100%;
 }
 
-.layer {
-    background-color: rgba(173, 172, 125, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .w3-bar .w3-button {
   padding: 16px;
 }
@@ -46,7 +37,8 @@ body, html {
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WHAT WE DO</a>
+      <a href="#whatwedo" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WHAT WE DO</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-briefcase"></i> WORK</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -61,7 +53,8 @@ body, html {
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WHAT WE DO</a>
+  <a href="#whatwedo" onclick="w3_close()" class="w3-bar-item w3-button">WHAT WE DO</a>  
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
@@ -83,72 +76,130 @@ body, html {
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE ALIADO TI</h3>
+  <h3 class="w3-center">ABOUT ALIADO TI</h3>
   <p class="w3-center w3-large">Key features of our company</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
+  <div class="w3-row-padding 2-center w3-center" style="margin-top:64px">
+    <div class="w3-rest w3-center">
+      <i class="fa fa-bullseye w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Our mission </p>
+      <p>The present and future is digital. We help businesses unveil and satisfy demand for digital transformation by providing engineering and consulting services that foster competitiveness and innovation.</p>
+    </div>       
+  </div>
+  <div class="w3-row-padding w3-center" style="margin-top:110px">
     <div class="w3-third">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Partnership</p>
-      <p>Partnering with businesses to help imagine, execute and accelerate their digital transformation journey.</p>
+      <i class="fa fa-link w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Connect</p>
+      <p>We connect with businesses to help imagine, execute and accelerate their digital transformation journey. Behind the tech, we balance creative thinking and the client's business strategy in order to accomplish goals.</p>
     </div>
     <div class="w3-third">
       <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">High-quality</p>
-      <p>All our team members have 10+ years of experience in their field, ensures that we only work with the Top of IT talent.</p>
+      <p>All our team members have 15+ years of experience in their field, ensures that we only work with the Top of IT talent.</p>
     </div>
     <div class="w3-third">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <i class="fa fa-users w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Partnership</p>
       <p>Hyper-personalized customer attention, we partner with you to bring your ideas to shine.</p>
     </div>
   </div>
 </div>
-
 <!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
+<div class="w3-container w3-light-grey" style="padding:128px 16px"  id="whatwedo">
+  <h3 class="w3-center">WHAT WE DO</h3>
+  <p class="w3-center w3-large">Our services</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-col m6 w3-center">
       <h3>We know tech.</h3>
-      <p>From Software Development<br>to cloud Services and DevOps.</p>
-      <p>We design, architect and then implement new digital products and services. We embrace the power of artificial intelligence and automation to enable organizations to become more efficient and effective. But, more importantly, we thrive by building technology environments that are future-fit and ready to quickly scale based on your business needs.</p>
+      <p class="w3-wide">From Software Development to Cloud Services and DevOps.</p>
+      <p style="text-align: justify">We design, architect and then implement new digital products and services. We embrace the power of artificial intelligence and automation to enable organizations to become more efficient and effective. But, more importantly, we thrive by building technology environments that are future-fit and ready to quickly scale based on your business needs.</p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406__340.jpg" alt="code" width="700" height="394">
+      <img class="w3-image w3-round-large" src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406__340.jpg" alt="code" width="400" height="394">
     </div>
   </div>
-</div>
-
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
+<br><br>
   <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="https://images.pexels.com/photos/4492135/pexels-photo-4492135.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" alt="elearning" width="700" height="294">
+    <div class="w3-col m6 w3-center" >
+      <img class="w3-image w3-round-large" src="https://images.pexels.com/photos/4492135/pexels-photo-4492135.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" alt="elearning" width="500" height="294">
     </div>
-    <div class="w3-col m6">
+    <div class="w3-col m6 w3-center">
       <h3>Business Virtual Learning.</h3>
-      <p>To train is to gain<br></p>
-      <p>Given the wide range of options, how do you ascertain what would work best for your learners and business? We offer to you our expertise to offer a highly customized approach as you address your diverse corporate training needs.</p>
+      <p class="w3-wide">To train is to gain<br></p>
+      <p style="text-align: justify">Given the wide range of options, how do you ascertain what would work best for your learners and business? We offer to you our expertise to offer a highly customized approach as you address your diverse corporate training needs.</p>
     </div>
    
   </div>
 </div>
-
-<!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Our Skills.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-col m6">      
-      <p class="w3-wide"><i class="fa fa-battle-net w3-margin-right"></i>Technology And Data</p>     
-      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Business Virtual Learning </p>
-    </div>
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
   </div>
 </div>
 
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">Some projects that have enchanted our clients</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third l3 m6">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80" style="width:100%" class="w3-hover-opacity" >
+     
+      <p class="w3-large w3-center w3-dark-grey "><i class="fa fa-code"></i>  Supplier Management Portal</p>
+      <p>Supplier Management Portal helps our clients with hundreds of suppliers, to provide end-to-end self-service functionalities that help to establish and maintain stronger supplier relationships, ensure compliance, reduce operational cost and mitigate risks.</p>
+    </div>
+    <div class=w3-third l3 m6">
+      <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+      <p class="w3-large w3-center w3-dark-grey "><i class="fa fa-book"></i> Corporate E-learning Project Consultancy</p>
+      <p>Supplier Management Portal helps our clients with hundreds of suppliers, to provide end-to-end self-service functionalities that help to establish and maintain stronger supplier relationships, ensure compliance, reduce operational cost and mitigate risks.</p>
+    </div>
+    <div class="w3-third l3 m6">
+      <img src="https://images.pexels.com/photos/826349/pexels-photo-826349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+      <p class="w3-large w3-center w3-dark-grey "><i class="fa fa-cloud"></i> On-Demand Corporate Video Streaming Delivery</p>
+      <p>Supplier Management Portal helps our clients with hundreds of suppliers, to provide end-to-end self-service functionalities that help to establish and maintain stronger supplier relationships, ensure compliance, reduce operational cost and mitigate risks.</p>
+    </div>
+   
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+  </div>
+</div>
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
@@ -170,7 +221,7 @@ body, html {
       </p>
     </form>
     <!-- Image of location/map -->
-    <img src="https://cdn.pixabay.com/photo/2017/03/21/22/14/bogota-2163484__340.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    <img src="https://cdn.pixabay.com/photo/2017/03/21/22/14/bogota-2163484__340.jpg" class="w3-image w3-greyscale" style="width:20%;margin-top:48px">
   </div>
 </div>
 
